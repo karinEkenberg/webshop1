@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Karin Ekenberg">
+    <meta name="description" content="Koppar, kontakt, Mugghörnan, mugg, muggar, kopp">
+    <link rel="icon" href="img/cup-hot-svgrepo-com.svg">
+</head>
+<body>
+    <header>
+        <a href="checkout.html">       
+            <figure id="shopping-cart">
+                <img src="img/cart-check-svgrepo-com.svg" alt="shopping cart">
+            </figure>
+        </a>
+        <h1>Mugghörnan</h1>
+        <nav class="dropdown">
+            <label for="toggle" class="dropbtn"><img src="img/hamburger-svgrepo-com(1).svg" alt="hamburgare"></label>
+            <input type="checkbox" id="toggle">
+            <div class="dropdown-content">
+                <a href="index.html">Mugghörnan</a>
+                <a href="vitamuggar.html">Vita muggar</a>
+                <a href="svartamuggar.html">Svarta muggar</a>
+                <a href="olikafarger.html">Färgglada muggar</a>
+                <a href="omoss.html">Om oss</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </nav>
+        <nav class="big-nav">
+            <ul>
+                <li><a class="show-where" href="kontakt.html">Kontakt</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="index.html">Mugghörnan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Kontakt</h2>
+        <aside class="menu">
+            <details>
+                <summary id="sidenav">Shop</summary>
+                <a class="links" href="vitamuggar.html">Vita muggar</a>
+                <a class="links" href="svartamuggar.html">Svarta muggar</a>
+                <a class="links" href="olikafarger.html">Färgglada muggar</a>
+              </details>
+        </aside>
+        <article class="text">
+            <h3>Hör av dig till oss</h3>
+            <p>Har du några frågor, funderingar eller speciella önskemål? Vi finns här för att hjälpa dig. Kontakta vår kundtjänst och låt oss göra din upplevelse hos oss så smidig som möjligt. Vår kundtjänst är tillgänglig under våra öppettider, måndag till fredag från kl. 9:00 till 18:00. Vi ser fram emot att höra från dig!</p>
+        </article>
+        <article class="text">
+            <h3>Feedback och förfrågningar</h3>
+            <p>Vi uppskattar din åsikt och strävar alltid efter att förbättra våra produkter och tjänster. Har du några tankar eller feedback du vill dela med dig av? Vi lyssnar! Kontakta vår feedbackavdelning. Din input hjälper oss att växa och skapa ännu bättre upplevelser för våra kunder. Tack för att du delar med dig! </p>
+        </article>
+        <article class="text">
+            <h3>Kontakta vårt team</h3>
+            <strong>Telefon:</strong><br>
+            <a href="tel:+46000000">073 829182</a><br>
+            <strong>Mail:</strong><br>
+            <a href="mailto:mugghornan@shop.se">mugghornan@shop.se</a> <br>
+            <strong>Sociala medier:</strong><br>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </article>
+        <article class="text">
+            <h3>Få hjälp med dina frågor</h3>
+            <form action="/action_page.php">
+                <label for="fname">Förnamn</label>
+                <input type="text" id="fname" name="firstname" placeholder="Förnamn..">
+            
+                <label for="lname">Efternamn</label>
+                <input type="text" id="lname" name="lastname" placeholder="Efternamn..">
+
+                <label for="email">E-post</label>
+                <input type="text" id="email" name="email" placeholder="E-post..">
+            
+                <label for="question">Fråga</label>
+                <select id="question" name="question">
+                  <option value="how">Hur beställer jag?</option>
+                  <option value="payment">Hur betalar jag?</option>
+                  <option value="regrets">Hur lång ångerrätt?</option>
+                </select>
+              
+                <input type="submit" value="Skicka" onclick="alert('Tack för ditt meddelande!')">
+              </form>
+        </article>
+    </main>
+    <footer>
+        <h2 class="footer-p">Kontakta oss</h2>
+        <figure>
+            <a href="https://www.instagram.com/" target="_blank"><img class="icons" src="img/instagram-svgrepo-com.svg" alt="instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="icons" src="img/facebook-svgrepo-com.svg" alt="facebook"></a>
+            <a href="tel:+46000000"><img class="icons" src="img/phone-svgrepo-com.svg" alt="phone"></a>
+            <a href="mailto:mugghornan@shop.se"><img class="icons" src="img/mail-svgrepo-com.svg" alt="mail"></a> 
+        </figure>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,426 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+main {
+    background-color: #FFFBF5;
+    color: #7743DB;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40%;
+    text-align: center;
+    
+}
+
+header {
+    background-color: #7743DB;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-family: 'bauhas 93';
+    color: #FFFBF5;
+    text-align: center;
+}
+
+footer {
+    font-weight: bold;
+    background-color: #7743DB;
+    color: #FFFBF5;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+}
+
+footer p {
+  padding-top: 3%;
+}
+
+.text h3 {
+  padding-bottom: 3%;
+}
+
+@font-face {
+    font-family: 'bauhas 93';
+    src: url(bauhaus-93/Bauhaus\ 93\ Regular.ttf) format(woff2)
+}
+
+.dropbtn {
+    background-color: #7743DB;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFBF5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: #7743DB;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;;
+  }
+
+  #toggle:checked + .dropdown-content {
+    display: block;
+  }
+
+  #toggle {
+    display: none;
+  }
+  .toggle:checked + .dropdown-content, .dropbtn:focus + .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #7743DB;
+  }
+
+  .for-sale {
+    background-color: #C3ACD0;
+    margin: 4%;
+    padding: 5%;
+    border-radius: 5%
+  }
+
+  .images {
+    width: 80%;
+    border-radius: 5%;
+  }
+
+  .buy-button {
+    background-color: #7743DB;
+    color: #FFFBF5;
+    width: 80%;
+    padding: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 12px;
+    border-color: #F7EFE5;
+    margin-bottom: 5px;
+  }
+
+  .plus {
+    margin-left: 10%;
+  }
+
+  .minus {
+    margin-right: 10%;
+  }
+
+  .icon {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .text-box {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  #toggle:checked + .text-box {
+    display: block;
+  }
+
+  .big-nav {
+    display: none;
+  }
+
+  #shopping-cart {
+    float: right;
+    top: 0%;
+  }
+
+  .text {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7EFE5;
+    margin: 5% 5%;
+    padding: 2%;
+  }
+
+  #team-work {
+    width: 90%;
+  }
+
+  .footer-p {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #color {
+    fill: #7132e6;
+  }
+
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #7743DB;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #C3ACD0;
+  }
+  
+  .text {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  @media screen and (min-width: 600px) {
+
+    header, h1 {
+      font-size: 2em;
+    }
+
+    main {
+      padding-top: 25%;
+    }
+
+    .flex {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 90%;
+    }
+
+    .for-sale {
+      width: 32%; 
+      height: 30%;
+    }
+
+    .dropdown {
+      margin-left: 12%;
+    }
+
+    h2 {
+      font-size: 3em;
+    }
+
+    h3 {
+      font-size: 2em;
+    }
+
+    .buy-button {
+      font-size: 100%;
+    }
+
+    .images {
+      width: 100%;
+    }
+
+    #shopping-cart {
+      margin-top: 2%;
+      margin-right: 2%;
+    }
+
+    .dropdown {
+      margin-left: 7%;
+    }
+
+    .muggar {
+      display: flex;
+      width: 90%;
+      margin: auto;
+    }
+
+    .muggar img {
+      width: 30%;
+      margin: 2%
+    }
+
+  }
+
+  @media screen and (min-width: 992px) {
+    
+    .flex {
+      width: 60%;
+    }
+
+    .for-sale {
+      width: 25%; 
+      height: 30%;
+    }
+
+    .dropdown {
+      display: none;
+    }
+
+    .for-sale {
+      padding: 2%;
+      margin: 2%;
+    }
+
+    .big-nav {
+      display: block;
+      margin-right: 18%;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #7743DB;
+    }
+    
+    li {
+      float: right;
+    }
+    
+    li a {
+      display: block;
+      color:#FFFBF5;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    li a:hover {
+      background-color:#C3ACD0;
+      color: #7132e6;
+    }
+
+    main {
+      padding-top: 12%;
+    }
+
+    #shopping-cart {
+      margin-top: 1%;
+      margin-right: 12%;
+    }
+
+    .show-where {
+      background-color: #C3ACD0;
+      color: #7132e6;
+    }
+
+    .text {
+      width: 60%;
+      margin: auto;
+    }
+
+    .text h3, p {
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    .text h3 {
+      font-size: 2em;
+      text-align: center;
+      margin-bottom: 1%;
+    }
+
+    #team-work {
+      width: 50%;
+      padding-top: 4%;
+    }
+
+    .icons {
+      height: 80px;
+    }
+
+    .footer-p {
+      font-size: 3em;
+      margin-top: 0%;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-evenly;
+    } 
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      background-color: #C3ACD0;
+      width: 12%;
+      height: auto;
+      padding: 3%;
+      margin-top: 1.5%;
+      position: fixed;
+      top: 10;
+      border-radius: 15px;
+    }
+
+
+
+    details > summary {
+      padding: 4px;
+      width: 100px;
+      background-color: #F7EFE5;
+      border: none;
+      box-shadow: 1px 1px 2px #bbbbbb;
+      cursor: pointer;
+      margin-bottom: 5px;
+      margin: auto;
+      border-radius: 15px;
+      box-shadow: 1px 1px 2px #7132e6;
+    }
+
+    #sidenav {
+      float: left;
+    }
+
+    details > .links {
+      background-color: #F7EFE5;
+      padding: 4px 30px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+      float: left;
+      color: #7132e6;
+      box-shadow: 1px 1px 2px #7132e6;
+      text-decoration: none;
+      border-radius: 15px;
+    }
+
+  }

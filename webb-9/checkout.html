@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betala</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Karin Ekenberg">
+    <meta name="description" content="Koppar, kontakt, Mugghörnan, mugg, muggar, kopp">
+    <link rel="icon" href="img/cup-hot-svgrepo-com.svg">
+</head>
+<body>
+    <header>
+        <a href="checkout.html">       
+            <figure id="shopping-cart">
+                <img src="img/cart-check-svgrepo-com.svg" alt="shopping cart">
+            </figure>
+        </a>
+        <h1>Mugghörnan</h1>
+        <nav class="dropdown">
+            <label for="toggle" class="dropbtn"><img src="img/hamburger-svgrepo-com(1).svg" alt="hamburgare"></label>
+            <input type="checkbox" id="toggle">
+            <div class="dropdown-content">
+                <a href="index.html">Mugghörnan</a>
+                <a href="vitamuggar.html">Vita muggar</a>
+                <a href="svartamuggar.html">Svarta muggar</a>
+                <a href="olikafarger.html">Färgglada muggar</a>
+                <a href="omoss.html">Om oss</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </nav>
+        <nav class="big-nav">
+            <ul>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="omoss.html">Om oss</a></li>
+                <li><a href="index.html">Mugghörnan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Betala</h2>
+        <aside class="menu">
+            <details>
+                <summary id="sidenav">Shop</summary>
+                <a class="links" href="vitamuggar.html">Vita muggar</a>
+                <a class="links" href="svartamuggar.html">Svarta muggar</a>
+                <a class="links" href="olikafarger.html">Färgglada muggar</a>
+              </details>
+        </aside>
+        <article class="text">
+            <h3>Betalning</h3>
+            <form action="/action_page.php">
+                <label for="fname">Förnamn</label>
+                <input type="text" id="fname" name="firstname" placeholder="Förnamn.." autocomplete="given-name">
+            
+                <label for="lname">Efternamn</label>
+                <input type="text" id="lname" name="lastname" placeholder="Efternamn.." autocomplete="family-name">
+                
+                <label for="adress">Adress</label>
+                <input type="text" id="adress" name="adress" placeholder="Adress.." autocomplete="address-line1">
+
+                <label for="email">E-post</label>
+                <input type="text" id="email" name="email" placeholder="E-post.." autocomplete="email">
+
+                <label for="payment">Betalsätt:</label>
+                <select id="question" name="question">
+                  <option value="card">VISA/MASTERCARD</option>
+                  <option value="klarna">Avbetalning med klarna</option>
+                  <option value="bill">Faktura</option>
+                  <option value="bank-transfer">Banköverföring</option>
+                </select>
+              
+                <input type="submit" value="Skicka" onclick="alert('Tack för din beställning!')">
+              </form>
+        </article>
+    </main>
+    <footer>
+        <h2 class="footer-p">Kontakta oss</h2>
+        <figure>
+            <a href="https://www.instagram.com/" target="_blank"><img class="icons" src="img/instagram-svgrepo-com.svg" alt="instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img class="icons" src="img/facebook-svgrepo-com.svg" alt="facebook"></a>
+            <a href="tel:+46000000"><img class="icons" src="img/phone-svgrepo-com.svg" alt="phone"></a>
+            <a href="mailto:mugghornan@shop.se"><img class="icons" src="img/mail-svgrepo-com.svg" alt="mail"></a> 
+        </figure>
+    </footer>
+</body>
+</html>
